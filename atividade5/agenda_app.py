@@ -1,11 +1,13 @@
-from agenda import Agenda
+from agenda import Local, Agenda
 
-a1 = Agenda('Gabriel', 'Barbosa', 999055732)
-a2 = Agenda('Diego', 'Souza', 999394035)
-a3 = Agenda('Renato', 'Kaiser', 999308504)
-a4 = Agenda('Juliana', 'Souza', 991900237)
+local1 = Local('IFRS Sertão', 'Eng Luiz Englert', 99170000)
+local2 = Local('Salão Paroquial', 'Av Brasil', 99170000)
+local3 = Local('Centro Cultural', 'Av Getúlio Vargas', 99170000)
 
-a1.mostra_registro()
-a2.mostra_registro()
-a3.mostra_registro()
-a4.mostra_registro()
+a1 = Agenda('Aula Prog 2 com Iuri', local1, 11, 11, 0)
+a2 = Agenda('Futsalzinho', local2, 14, 21, 0)
+a3 = Agenda('Formatura Joãozinho', local3, 27, 13, 30)
+
+a1.mostra_compromisso()
+a2.mostra_compromisso()
+a3.mostra_compromisso()
